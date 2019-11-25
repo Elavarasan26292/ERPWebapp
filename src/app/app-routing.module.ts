@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'erpmainpage', loadChildren: './login-register/login-register.module#LoginRegisterModule' }
+  { path: '', redirectTo: '', pathMatch: 'full' },
+  { path: 'erp', loadChildren: './login-register/login-register.module#LoginRegisterModule' }
 ];
 
 @NgModule({
