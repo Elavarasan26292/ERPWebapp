@@ -1,0 +1,98 @@
+.loginpage{
+    color:#ffffff;
+   .welcomescreen{
+    //    height: 12vh;
+       background-color: #161B21;
+       .erplogo{
+        height: 18%;
+        width: 21%;
+        border-radius: 95px;
+        margin-top: 8%;
+        margin-bottom: 8%;
+        margin-left: 15px;
+       }
+       h3{
+        font-size: 60px;
+        margin-left: 15px;
+        font-weight: 55;
+        margin-bottom: 15px;
+       }
+       h5{
+            font-size: 30px;
+            margin-left: 15px;
+           font-weight: 55;
+           margin-bottom: 12px;
+       }
+       h6{
+        margin-left: 15px;
+        font-size: 20px;
+        font-weight: 55;
+        margin-bottom: 0px;
+    }
+    .registerbutton{
+        padding: 8px;
+        margin: 0px;
+        border: 0px;
+        border-radius: 3px;
+        font-size: 18px;
+        font-weight: 55;
+        background-color: #00A16F;
+        color: #ffffff;
+        margin-left: 15px;
+        margin-top: 18px;
+    }
+    p{
+        padding-top: 23vh;
+        padding-bottom: 13%;
+        span{
+            font-size: 12px;
+            padding-left: 18%;
+            font-weight: 55;
+            cursor: pointer;
+            // margin-bottom: 0px;
+        }
+    }
+   }
+   .loginform{
+    background-color:	#00A16F;
+    padding-top: 20%;
+    padding-left: 7%;
+    h3{
+        font-size: 38px;
+        font-weight: 55;
+        margin-bottom: 0px;
+       }
+       input{
+        color: #ffffff;
+        background-color:	#00A16F;
+        outline: 0;
+        border-width: 0 0 1px;
+        border-color: #ffffff;
+        font-size: 18px;
+        font-weight: 55;
+        width: 60%;
+        height: 43px;
+       }
+       .signindiv{
+        display: block;
+        .signinbtn{
+            background-color:#ffffff;
+            color: #00A16F;
+            margin-top: 10px;
+            border-radius: 3px;
+           }
+           p{
+               display: inline-block;
+               cursor: pointer;
+               padding-left: 25%;
+               padding-top: 15px;
+           }
+       }
+       
+       ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 55;
+      }
+   }     
+}
