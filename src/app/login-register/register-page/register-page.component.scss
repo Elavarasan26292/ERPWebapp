@@ -2,7 +2,7 @@ h3{
     font-size: 38px;
     font-weight: 55;
     margin-bottom: 0px;
-    padding-top: 45%;
+    padding-top: 25%;
    }
    input{
     color: #ffffff;
@@ -12,16 +12,17 @@ h3{
     border-color: #ffffff;
     font-size: 18px;
     font-weight: 55;
-    width: 60%;
+    width: 65%;
     height: 43px;
-    margin-top: 12px;
+    margin-top: 6px;
    }
    .signindiv{
     display: block;
     .signinbtn{
         background-color:#ffffff;
         color: #00A16F;
-        margin-top: 10px;
+        margin-top: 25px;
+        margin-left: 30%;
         border-radius: 3px;
        }
        p{
@@ -37,3 +38,7 @@ h3{
     font-size: 18px;
     font-weight: 55;
   }
+
+  .registerfrmerror{
+    color: #FFE77Aff;
+} 

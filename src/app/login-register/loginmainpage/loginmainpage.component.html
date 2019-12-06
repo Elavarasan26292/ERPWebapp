@@ -1,0 +1,22 @@
+<div class="container-fluid loginpage">
+  <div class="row">
+      <div class="col-12 col-md-6 col-sm-6 col-lg-6 welcomescreen"> 
+          <img src="../../../assets/images/erp-logo.png" class="erplogo" alt="erplogo">
+  <h3>Welcome</h3>
+  <h5>Request for an ERP account here</h5>
+  <h6>Request for an free ERP account to view the product and playaround with the application(Access will be limited for free account)</h6>
+  <button *ngIf="flag=='login'" type="button" class="registerbutton" (click)="register()">Register Now</button>
+  <button *ngIf="flag=='register' || flag=='forgotpwd'" type="button" class="registerbutton" (click)="register()">Signin</button>
+  <p>
+      <span>Helpcenter</span>
+      <span>Pricing</span>
+      <span>Policies</span>
+  </p>
+      </div>
+      <div class="col-12 col-md-6 col-sm-6 col-lg-6 loginform">
+       <app-login-page *ngIf="flag=='login'" (passFlag)="removeLeaveNote($event)"></app-login-page>
+       <app-register-page *ngIf="flag=='register'"></app-register-page>  
+      <app-forgotpwd-page *ngIf="flag=='forgotpwd'"></app-forgotpwd-page>         
+  </div>
+  </div>
+  

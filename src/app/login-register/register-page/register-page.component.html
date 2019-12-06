@@ -1,3 +1,23 @@
-<p>
-  register-page works!
-</p>
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+<h3>Required Basic user info</h3>
+<input class="txtclass" type="text" formControlName="firstName" placeholder="First name*"/>
+<span class="registerfrmerror" *ngIf="submitted && formInput.firstName.errors && formInput.firstName.errors.required">First Name is required</span>
+<input class="txtclass" type="text" formControlName="emailid" name="emailid" placeholder="emailId*"/>
+<span class="registerfrmerror" *ngIf="submitted && formInput.emailid.errors">Valid email id is required</span>
+<input class="txtclass" type="text" formControlName="address1" name="address1" placeholder="Address 1*"/>
+<span class="registerfrmerror" *ngIf="submitted && formInput.address1.errors && formInput.address1.errors.required">Address 1 is required</span>
+<input class="txtclass" type="text" formControlName="address2" name="address2" placeholder="Address 2"/>
+<input class="txtclass" type="text" formControlName="country" name="country" placeholder="Country*"/>
+<span class="registerfrmerror" *ngIf="submitted && formInput.country.errors && formInput.country.errors.required">Country is required</span>
+<input class="txtclass" type="text" formControlName="state" name="state" placeholder="State*"/>
+<span class="registerfrmerror" *ngIf="submitted && formInput.state.errors && formInput.state.errors.required">State is required</span>
+<input class="txtclass" type="text" formControlName="city" name="city" placeholder="City*"/>
+<span class="registerfrmerror" *ngIf="submitted && formInput.city.errors && formInput.city.errors.required">City is required</span>
+<input class="txtclass" type="text" formControlName="zipcode" name="zipcode" placeholder="Zipcode*"/>
+<span class="registerfrmerror" *ngIf="submitted && formInput.zipcode.errors && formInput.zipcode.errors.required">zipcode is required</span>
+<div class="signindiv">
+    <button class="signinbtn" type="submit">Register</button>
+</div>
+</div>
+</form>
